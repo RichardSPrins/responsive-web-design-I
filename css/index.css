@@ -161,41 +161,40 @@ section {
 	flex-direction: row;
 	/* align-items: flex-end; */
 	flex-wrap: wrap;
-}
-
-.card-group {
-	display: flex;
-	justify-content: space-between;
-
+	justify-content: space-around;
 }
 
 p {
 	line-height: 1.25;
 }
 
-.card {
-	padding: 20px;
-	width: 430px;
-	height: 250px;
-	border: 1px solid;
-	margin: 20px 0px;
-	background-color: rgb(240, 238, 238);
+
+h1 {
+	font-size: 75px;
 }
 
-body {
-	width: 900px;
-	margin: 0 auto;
+h2 {
+	font-size: 25px;
+}
+hr {
+	margin: 0 70px;
+}
+ul {
+	list-style-type: disc;
+	line-height: 2;
 }
 
 nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	margin-left: 0px;
 }
 
 nav a {
 	text-decoration: none;
 	color: lightgray;
-	margin: 25px;
+	margin: 30px;
 }
 
 nav a:hover {
@@ -204,6 +203,9 @@ nav a:hover {
 
 nav img {
 	margin-left: 40px;
+}
+article {
+	padding: 40px;
 }
 
 .action-button {
@@ -220,29 +222,34 @@ nav img {
 }
 
 .bannerPic {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+
+.card {
+	padding: 20px;
+	width: 430px;
+	height: 250px;
+	border: 1px solid;
 	margin: 20px 0px;
+	background-color: rgb(240, 238, 238);
 }
+.card-group {
+	display: flex;
+	justify-content: space-between;
 
-h1 {
-	font-size: 75px;
 }
-
-h2 {
-	font-size: 25px;
-}
-
-ul {
-	list-style-type: disc;
-line-height: 2;
-}
-
 .facts {
 	display: flex;
 	width: 49%;
 	align-content: space-between;
 	flex-wrap: wrap;
 }
-
+.logo {
+	margin-right: 40px;
+}
 .facts p {
 	margin: 10px 0px;
 }
@@ -261,29 +268,40 @@ line-height: 2;
 	align-items: center;
 	justify-content: center
 }
-
-section.heading {
+header.nav{
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+	padding: 0px 50px;
+}
+section.heading {
+	/* display: flex; */
 	align-items: center;
 	justify-content: space-around;
 	margin-bottom: 50px;
 	margin-top: 20px;
+	padding: 30px;
+	padding-left: 60px;
 }
 
 .top {
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: nowrap;
 }
-.bottom {
+
+.bottom.home {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: nowrap;
-	margin-bottom: 40px;
+	/* margin: 40px; */
 	/* padding: 10px; */
 }
+
 .bottom p {
-	padding-right: 10px
+	/* padding-right: 10px */
 }
+
 .intro {
 	flex-direction: column;
 	align-items: center;
@@ -302,9 +320,22 @@ section.heading {
 .button p {
 	padding-top: 8px;
 }
+
 .contact {
 	display: flex;
 	flex-direction: column;
 	margin-top: 30px;
-} 
+}
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+@media (max-width: 800px) {
+	.heading img {
+		display: none;
+	}
+	header.nav {
+		display: flex;
+	}
 
+}
